@@ -1,0 +1,5 @@
+The <project_name>.conf sample file is no longer generated and
+maintained in Trunk.  To generate your own version of
+<project_name>.conf, use the following command:
+
+tox -egenconfig
