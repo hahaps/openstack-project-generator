@@ -3,6 +3,7 @@ Sample generator for openstack new projects(Base on openstack stable/liberty ver
 
 ## Quick start
 Follow those steps to generate new projects:
+
 1. Get openstack-project-generator by command: `git clone https://github.com/hahaps/openstack-project-generator.git`.
 2. Go into openstack-project-generator by command: `cd openstack-project-generator`.
 3. Run command `./generate.sh -h` or `./generate.sh --help` for usage help.
