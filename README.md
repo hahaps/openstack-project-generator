@@ -25,7 +25,8 @@ Follow tox command will be usful for testing and generate config.sample files:
 
 ## License
 
-   Author: Li Xipeng<lixipeng@hihuron.com>(From Beijing Huron Technology Co.Ltd)
+   Author: Li Xipeng <lixipeng@hihuron.com>
+           From Beijing Huron Technology Co.Ltd
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
