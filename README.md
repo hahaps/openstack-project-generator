@@ -12,9 +12,8 @@ Follow those steps to generate new projects:
 
 ## Install and Run
 To Install new project generated with `openstack-project-generator` for development level:
-```
-sudo pip install -r <new_project_path>/requirements.txt -e <new_project_path>
-```
+
+    sudo pip install -r <new_project_path>/requirements.txt -e <new_project_path>
 
 Follow tox command will be usful for testing and generate config.sample files:
 * To generate config.sample files: `tox -egenconfig`.
