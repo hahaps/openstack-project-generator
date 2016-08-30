@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash -e
 #
 # Author: Lixipeng <lixipeng@hihuron.com>
 #
