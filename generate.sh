@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 #
 # Author: Lixipeng <lixipeng@hihuron.com>
 #
@@ -83,6 +83,12 @@ else
     check_exist "Project path" $PROJECT_PATH
 fi
 PROJECT_PATH="$PROJECT_PATH/$PROJECT_NAME"
+
+# Check whether PROJECT_NAME = MANAGER_NAME
+if [ $PROJECT_NAME = $MANAGER_NAME ]; then
+    echo "Project name must be unequal with manager name."
+    exit 0
+fi
 
 # Make project dir
 if [ -d $PROJECT_PATH ]; then
