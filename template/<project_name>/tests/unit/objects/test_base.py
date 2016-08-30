@@ -22,7 +22,7 @@ from <project_name>.objects import base
 from <project_name>.tests.unit import objects as test_objects
 
 
-@base.<Project_name>ObjectR<project_name>try.register
+@base.<Project_name>ObjectRegistry.register
 class TestObject(base.<Project_name>Object):
     fields = {
         'scheduled_at': base.fields.DateTimeField(nullable=True),
@@ -80,7 +80,7 @@ class Test<Project_name>Object(test_objects.BaseObjectsTestCase):
 
 class Test<Project_name>ComparableObject(test_objects.BaseObjectsTestCase):
     def test_comparable_objects(self):
-        @base.<Project_name>ObjectR<project_name>try.register
+        @base.<Project_name>ObjectRegistry.register
         class MyComparableObj(base.<Project_name>Object,
                               base.<Project_name>ObjectDictCompat,
                               base.<Project_name>ComparableObject):

@@ -31,12 +31,12 @@ remotable_classmethod = base.remotable_classmethod
 obj_make_list = base.obj_make_list
 
 
-class <Project_name>ObjectR<project_name>try(base.VersionedObjectR<project_name>try):
+class <Project_name>ObjectRegistry(base.VersionedObjectRegistry):
     def r<project_name>tration_hook(self, cls, index):
         setattr(objects, cls.obj_name(), cls)
 
 
-@<Project_name>ObjectR<project_name>try.register
+@<Project_name>ObjectRegistry.register
 class <Project_name>Object(base.VersionedObject):
     # NOTE(thangp): OBJ_PROJECT_NAMESPACE needs to be set so that nova,
     # <project_name>, and other objects can exist on the same bus and be distinguished
